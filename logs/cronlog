@@ -1,0 +1,10 @@
+sudo: unable to resolve host XMAS_4
+Error! Failed to get request token.
+Traceback (most recent call last):
+  File "master_node.py", line 225, in <module>
+    main()
+  File "master_node.py", line 216, in main
+    twitter_stream()
+  File "master_node.py", line 147, in twitter_stream
+    request_token = auth.request_token
+AttributeError: 'OAuthHandler' object has no attribute 'request_token'

@@ -1,0 +1,28 @@
+Hey Scott
+recieve_nope.py is put and run on any recieving pi
+master_node.py is run on master. Make sure camera is set up,
+or the code won't work. We could change this, but not worth the time.
+
+
+Things to do:
+Parsing:
+   	XTweets come in as a json object. Some parsing on this
+	structure is already done. Do parsing on 'text' variable
+	XCreate dictionary of acceptable colors, paired with RGB values
+	Xuse tweet_to_command() function to parse and figure out message
+	-Deal with punctuation around colors (like @GUChristmasTree Turn Purple!)
+
+Control:
+	XCreate control script to set colors ourselves.
+	XCopy master_node.send_message(), use arg[v] inputs for message
+	Xssh into pi, run script with our own arguments.
+	
+Camera:
+	-Figure out range on photo 
+	-figure out where to position camera in Hemmingson
+	-Make overlay. Uncomment code in master_node.camera() to include overlay
+	-Timing after picture is taken
+
+Exrta functions:
+	-add extra functions to lights.
+
